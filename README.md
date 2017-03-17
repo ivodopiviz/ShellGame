@@ -7,6 +7,8 @@
 3. Run `gulp`.
 4. Your default browser should open and the game should start playing.
 
+Alternatively, you might run the game simply by opening the `index.html` file in the `dist` directory.
+
 ## About
 
 Simple "Shell Game" written in JavaScript using Pixi.js and TweenMax. 
