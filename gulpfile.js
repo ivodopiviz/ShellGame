@@ -12,7 +12,6 @@ gulp.task('html', function(){
 });
 
 gulp.task('scripts', function(){
-    // Single entry point to browserify
     gulp.src('./app/js/app.js')
         .pipe(browserify({
             insertGlobals: true,
