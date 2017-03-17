@@ -6,6 +6,8 @@
 var Utils = {
     displayWidth : 1024,
     displayHeight : 576,
+
+    // shuffles an array in place
     shuffleArray : function(a) {
         var j, x, i;
         for (i = a.length; i; i--) {

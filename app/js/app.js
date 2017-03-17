@@ -25,14 +25,14 @@ PIXI.loader
 function setup() {
     board.setup();
     gameUI.setup();
+
+    // set up board callbacks
     board.onPlayerLost = function() {
-        console.log("OnPlayerLost!");
         gameUI.showPlayerLost();
         setTimeout(resetGame, 5000);
     }
 
     board.onPlayerWon = function() {
-        console.log("OnPlayerWon!");
         gameUI.showPlayerWon();
         setTimeout(resetGame, 5000);
     }
@@ -41,6 +41,7 @@ function setup() {
     gameLoop();
 }
 
+// simple game loop, it only renders in this case
 function gameLoop() {
     requestAnimationFrame(gameLoop);
     

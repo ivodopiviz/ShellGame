@@ -23,6 +23,7 @@ var GUI = function(container) {
         container.addChild(lostText);
     };
 
+    // simple methods to handle visibility of the GUI elements
     this.showPlayerWon = function() {
         wonText.visible = true;
         setTimeout(self.hideAll, 2000);

@@ -97,6 +97,7 @@ var Board = function(container) {
         }
     }
 
+    // makes the shells not clickable
     this.disableShells = function() {
         for(i=0; i<self.shells.length; i++) {
             self.shells[i].interactive = false;
